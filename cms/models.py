@@ -29,7 +29,7 @@ class Post(models.Model):
 
     class Meta:
         """Meta definition for Post."""
-
+        ordering = ['-pub_date',]
         verbose_name = 'Post'
         verbose_name_plural = 'Posts'
 
